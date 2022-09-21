@@ -1,0 +1,148 @@
+<html>
+<head>
+    <title>Customer Registration Page</title>
+    <link rel="stylesheet" type="text/css" href="./styles/mystyle.css">
+
+   <script src="./scripts/myscript.js"> </script>
+
+   <style>
+       #custid {
+           font-family: 'Times New Roman', Times, serif;
+           font-size: 10pt;
+           color: red;
+       }
+
+       table, td
+       {
+           border: 1px solid red
+       }
+
+       td {
+           border-color: green;
+       }
+   </style>
+</head>
+<body>
+    <h1>Welcome to Customer Regitration Page</h1>
+    <h1>This is another h1 just for testing purpose</h1>
+    <p>You are required to enter all MANDATORY  <span style="color:red">*</span> information in this page.
+        This information will be used to register in our website
+    </p>
+    <a href="/" target="_parent">Home</a>
+    <p>
+        In case, you are already registered, go to mypage
+        <a href="mypage.html">My Page</a>
+    </p>
+<form action="dummy-server-url">
+
+        <button onclick="showTodayDate()">Show Today's Date</button>
+        <div id="date1">Current Date will appear here after you click the button</div>
+
+    <table  width="100%" bgcolor="gray">
+
+        <tr>
+            <td>Enter Aadhar id
+                <span>
+                    <button onclick="f1()">What is this?</button>
+                </span>
+
+            </td>
+            <td><input id="custid" type="number" required autofocus placeholder="unique number by the Govt">
+                <span style="color:red">*</span>
+                
+            </td>
+        </tr>
+
+        <tr>
+            <td>Enter firstname</td>
+            <td><input type="text"></td>
+        </tr>
+
+        <tr>
+            <td>Enter lastname</td>
+            <td><input type="text"></td>
+        </tr>
+    
+        <tr>
+            <td>Enter username</td>
+            <td><input type="text"></td>
+        </tr>
+    
+        <tr>
+            <td>Enter password</td>
+            <td><input type="password"></td>
+        </tr>
+
+        <tr>
+            <td>confirm Password</td>
+            <td><input type="password"></td>
+        </tr>
+
+        <tr>
+            <td>Enter your age</td>
+            <td><input type="number" min="18" max="60"></td>
+        </tr>
+
+        <tr>
+            <td>Enter mobile no</td>
+            <td><input type="text" minlength="10" maxlength="10"></td>
+        </tr>
+
+        <tr>
+            <td>Enter email id</td>
+            <td><input type="email"></td>
+        </tr>
+    
+        <tr>
+            <td>Enter DOB</td>
+            <td><input type="date"></td>
+        </tr>
+
+        <tr>
+            <td>Select your gender</td>
+            <td><input type="radio" name="xyz">Male
+                <input type="radio" name="xyz">Female
+                <input type="radio" name="xyz">Other</td>
+        </tr>
+
+        <tr>
+            <td>How would you like to pay?</td>
+            <td>
+                <select>
+                    <option>Internet Banking</option>
+                    <option>Paytm</option>
+                    <option selected>Credit Card</option>
+                    <option>Debit Card</option>
+                </select>
+                
+                <input type="radio" name="pm">
+                <input type="radio" name="pm">Paytm
+                <input type="radio" name="pm">Credit Card
+                <input type="radio" name="pm">Debit Card</td>
+        </tr>
+        
+        <tr>
+            <td>How would you like to be notified?</td>
+            <td><input type="checkbox" name="mp">Via text in Mobile Phone
+                <input type="checkbox" name="wa">Via Whatsapp in Mobile Phone
+                <input type="checkbox" name="em">Via email 
+                <input type="checkbox" name="ltr">Via old fashioned letter</td>
+        </tr>
+
+        <tr>
+            <td>Enter your website name</td>
+            <td><input type="url" placeholder="example: http://www.guru.com"> </td>
+        </tr>
+
+        <tr>
+            <td>Enter your valuable feedback, we will get back to you</td>
+            <td><textarea rows="5" cols="50"></textarea> </td>
+        </tr>
+        <tr>
+            <td><input type="submit" value="Register"></td>
+            <td><input type="reset" value="Clear form"></td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>
